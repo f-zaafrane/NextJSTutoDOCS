@@ -1,0 +1,14 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5433,
+      "driver": "PostgreSQL",
+      "name": "NextAPP",
+      "username": "fady",
+      "password": "fady",
+      "database": "nextdb"
+    }
+  ]
+}
