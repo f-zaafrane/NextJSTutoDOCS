@@ -1,3 +1,4 @@
+"use server";
 import bcrypt from "bcryptjs";
 import postgres from "postgres";
 import { invoices, customers, revenue, users } from "../lib/placeholder-data";
@@ -103,7 +104,7 @@ async function seedRevenue() {
 
 export async function GET() {
   try {
-     await sql.begin(() => [
+    await sql.begin(() => [
       seedUsers(),
       seedCustomers(),
       seedInvoices(),

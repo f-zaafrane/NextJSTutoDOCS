@@ -6,6 +6,12 @@ import { Suspense } from "react";
 import { LatestInvoicesSkeleton, RevenueChartSkeleton } from "@/app/ui/skeletons";
 
 import { fetchCardData } from "@/app/lib/data";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
+
 
 export default async function Page() {
   const {
